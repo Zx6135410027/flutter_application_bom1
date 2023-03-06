@@ -10,6 +10,31 @@ class secondUI extends StatefulWidget {
 class _secondUIState extends State<secondUI> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black12,
+        title: Text(
+          'หน้าแรกUI',
+        ),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.search,
+              color: Colors.black,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.exit_to_app,
+              color: Colors.amberAccent,
+            ),
+          ),
+        ],
+      ),
+      drawer: Drawer(),
+    );
   }
 }
